@@ -52,7 +52,7 @@ async function startBot() {
   const sock = makeWASocket({
     version,
     auth: state,
-    printQRInTerminal: false,
+    printQRInTerminal: true,
     logger: pino({ level: 'silent' }),
     browser: ["NexosBot", "Opera GX", "120.0.5543.204"],
     generateHighQualityLinkPreview: true,
